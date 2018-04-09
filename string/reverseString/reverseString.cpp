@@ -1,4 +1,4 @@
-// Example program
+// reverse a string 
 #include <iostream>
 #include <string>
 #include <map>
