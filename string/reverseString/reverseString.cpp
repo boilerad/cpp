@@ -37,4 +37,5 @@ int main()
 	std::cout << str << "\n";
 	std::cout << resString << "\n";
 	std::system("PAUSE");
+	return 0;
 }
