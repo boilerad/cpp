@@ -11,11 +11,7 @@ public:
 		// sorting O(nlongn)
 		std::sort(array, array+N);
 
-		int *array_p2 = new int[ N ];
-		for (int i = 0; i < N; i++)
-			array_p2[i] = array[i] * array[i];
-
-
+	
 		// - - - - - --- - - - 
 		//   l           r   i 
 		//   ->         
