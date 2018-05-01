@@ -25,11 +25,11 @@ public:
 		stack<int> s; // index stack
 		for (int i = 0; i < n * 2; i++) { // circular array --> need to x2
 			int num = nums[i % n];
-			while (!s.empty() && nums[s.top()] < num) {
-				next[s.top()] = num;
+			while (!s.empty() && nums[s.top()] < num) { // just need to store index of elements that are greater than the current pointing value  
+				next[s.top()] = num;					// if they are smaller, then the current pointed value is their NextGreaterELe, and we pop all of these indices out 
 				s.pop();
 			}
-			if (i < n) s.push(i);
+			if (i < n) s.push(i); // store index, not value
 		}
 		return next;
 	}
@@ -54,10 +54,15 @@ public:
 
 int main()
 {
+	
 	Solution sln;
-	vector <int>v { 1,3,6,2,5 };
+	vector <int>v { 3,1,6,2,5 };
 	vector<int> o;
 	o = sln.nextGreaterElements(v);
+	
+	for (int num : v)	std::cout << num << ", ";
+	std::cout << std::endl;
+
 	for(int num : o)	std::cout << num << ", ";
 	std::cout << std::endl;
 	
