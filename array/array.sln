@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "array", "array\array.vcxproj", "{9D0D886B-A9BD-4E58-83B9-BFD2221D6339}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NextGreaterElement", "NextGreaterElement\NextGreaterElement.vcxproj", "{ACF98CD6-47BD-494F-8716-4337F5558901}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PythagoreanTriplet", "PythagoreanTriplet\PythagoreanTriplet.vcxproj", "{96DDE44E-DBB9-41D1-A9B2-1AB5ACCBC036}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "remove_K_digit", "remove_K_digit\remove_K_digit.vcxproj", "{9CFE134A-94C9-4C45-9914-A020C2771DE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,8 +43,19 @@ Global
 		{96DDE44E-DBB9-41D1-A9B2-1AB5ACCBC036}.Release|x64.Build.0 = Release|x64
 		{96DDE44E-DBB9-41D1-A9B2-1AB5ACCBC036}.Release|x86.ActiveCfg = Release|Win32
 		{96DDE44E-DBB9-41D1-A9B2-1AB5ACCBC036}.Release|x86.Build.0 = Release|Win32
+		{9CFE134A-94C9-4C45-9914-A020C2771DE4}.Debug|x64.ActiveCfg = Debug|x64
+		{9CFE134A-94C9-4C45-9914-A020C2771DE4}.Debug|x64.Build.0 = Debug|x64
+		{9CFE134A-94C9-4C45-9914-A020C2771DE4}.Debug|x86.ActiveCfg = Debug|Win32
+		{9CFE134A-94C9-4C45-9914-A020C2771DE4}.Debug|x86.Build.0 = Debug|Win32
+		{9CFE134A-94C9-4C45-9914-A020C2771DE4}.Release|x64.ActiveCfg = Release|x64
+		{9CFE134A-94C9-4C45-9914-A020C2771DE4}.Release|x64.Build.0 = Release|x64
+		{9CFE134A-94C9-4C45-9914-A020C2771DE4}.Release|x86.ActiveCfg = Release|Win32
+		{9CFE134A-94C9-4C45-9914-A020C2771DE4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D122F1AE-C70B-4FC5-A5C4-1A189D747A59}
 	EndGlobalSection
 EndGlobal
