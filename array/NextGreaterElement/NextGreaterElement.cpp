@@ -24,9 +24,9 @@ public:
 		vector<int> next(n, -1);
 		stack<int> s; // index stack
 		for (int i = 0; i < n * 2; i++) { // circular array --> need to x2
-			int num = nums[i % n];
-			while (!s.empty() && nums[s.top()] < num) { // just need to store index of elements that are greater than the current pointing value  
-				next[s.top()] = num;					// if they are smaller, then the current pointed value is their NextGreaterELe, and we pop all of these indices out 
+			int curr = nums[i % n];
+			while (!s.empty() && nums[s.top()] < curr) { // just need to store in stack the index of elements that are greater than the current pointing value  
+				next[s.top()] = curr;					 //  pop all that are smaller,  also the current pointed value is their NextGreaterELe 
 				s.pop();
 			}
 			if (i < n) s.push(i); // store index, not value
