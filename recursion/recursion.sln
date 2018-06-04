@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parentheses", "Parentheses\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "subset", "subset\subset.vcxproj", "{F0EC1C30-4E63-4B73-8FA3-6544D82BDBC4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "folding_paper", "folding_paper\folding_paper.vcxproj", "{D53E230B-D47A-4DE8-9B04-7E096A720CB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{F0EC1C30-4E63-4B73-8FA3-6544D82BDBC4}.Release|x64.Build.0 = Release|x64
 		{F0EC1C30-4E63-4B73-8FA3-6544D82BDBC4}.Release|x86.ActiveCfg = Release|Win32
 		{F0EC1C30-4E63-4B73-8FA3-6544D82BDBC4}.Release|x86.Build.0 = Release|Win32
+		{D53E230B-D47A-4DE8-9B04-7E096A720CB9}.Debug|x64.ActiveCfg = Debug|x64
+		{D53E230B-D47A-4DE8-9B04-7E096A720CB9}.Debug|x64.Build.0 = Debug|x64
+		{D53E230B-D47A-4DE8-9B04-7E096A720CB9}.Debug|x86.ActiveCfg = Debug|Win32
+		{D53E230B-D47A-4DE8-9B04-7E096A720CB9}.Debug|x86.Build.0 = Debug|Win32
+		{D53E230B-D47A-4DE8-9B04-7E096A720CB9}.Release|x64.ActiveCfg = Release|x64
+		{D53E230B-D47A-4DE8-9B04-7E096A720CB9}.Release|x64.Build.0 = Release|x64
+		{D53E230B-D47A-4DE8-9B04-7E096A720CB9}.Release|x86.ActiveCfg = Release|Win32
+		{D53E230B-D47A-4DE8-9B04-7E096A720CB9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

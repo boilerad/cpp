@@ -5,12 +5,13 @@
 
 // use >> or getline() to parse string by a delimiter 
 
-int main()
+void stringstrean_foo()
 {
-	std::cout << "\n\n  -- stringstream -- \n";
+	std::cout << "-- stringstream -- \n\n";
+
 	/// stringstream
 	std::string str("mqn a b 123!");
-	std::stringstream ss( str );
+	std::stringstream ss(str);
 
 	// using >> to read each word separated by a space
 	std::string tmp;
@@ -18,28 +19,29 @@ int main()
 		std::cout << tmp << ", ";
 	std::cout << std::endl;
 
+	// clear stringsream
 	ss.str(""); ss.clear();
-
 
 	// using getline with delimiter (char)
 	ss.str(str);
-	while ( std::getline(ss, tmp, ' ') )
+	while (std::getline(ss, tmp, ' '))
 		std::cout << tmp << "/ ";
 	std::cout << std::endl;
-	std::cout << "\n\n  -- FILE : read -- \n";
+}
 
+void read_file_foo()
+{
+	std::cout << "\n\n-- read FILE -- \n\n";
 
-	//-------------------------------------------------------------
-	/// FIlE read
-	std::ifstream  fs; 
+	std::ifstream  fs;
+	fs.open("text.txt");
 
 	// using >> to read each word separated by a space
-	fs.open("text.txt");
+	std::string tmp;
 	while (fs >> tmp)
 		std::cout << tmp << ", ";
 	std::cout << std::endl;
 	fs.close();
-
 
 	// using getline with delimiter (char)
 	fs.open("text.txt");
@@ -48,12 +50,34 @@ int main()
 	std::cout << std::endl;
 	fs.close();
 
+}
 
-	//-------------------------------------------------------------
-	/// FILE write
+void write_file_foo()
+{
+	std::cout << "\n\n-- write FILE -- \n\n";
+
 	std::ofstream of("text_write.txt", std::ofstream::app);
 	of << "writing output.\n";
 	of.close();
-	std::system("PAUSE");
+}
+
+
+void keyboard_foo()
+{
+	std::cout << "\n\n-- keyboard -- \n\n";
+	std::cout << "Please input a number: " << std::endl;
+	int num;
+	std::cin >> num;
+	std::cout << "Square of the number is " << num * num << std::endl;
+}
+int main()
+{
+	
+	//stringstrean_foo();
+
+	//read_file_foo();
+
+	keyboard_foo();
 	return 0;
+
 }

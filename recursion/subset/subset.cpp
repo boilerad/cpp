@@ -19,7 +19,7 @@ vector< vector<int>> ss;
 void findSubSet(int * array, vector<int> v, int i, int N) // cannot use &v, because 2 new subsets are deviated from original subset -> just use copy, no reference 
 {
 	// return condition
-	if (i > N)
+	if (i >= N)
 	{
 		ss.push_back(v);
 		return;
@@ -76,7 +76,7 @@ int main()
 
 	// subsets
 	vector<int> v;
-	findSubSet(array, v, 0, N - 1);
+	findSubSet(array, v, 0, N);
 
 	for (auto v : ss) {
 		std::cout << "{";

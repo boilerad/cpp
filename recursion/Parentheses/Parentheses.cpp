@@ -14,7 +14,7 @@ L1: (
 L2: () or ((
 L3: ()(   ((( or (() ...
 ...
-At each level, we add up something new deviated from the previous level. We stop whrn we have enough length
+At each level, we add up something new deviated from the previous level. We stop when we have enough length
 All these features tell us it is recursion
 */
 
